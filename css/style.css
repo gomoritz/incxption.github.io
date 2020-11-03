@@ -6,17 +6,19 @@ body {
    height: 100vh;
    padding: 0;
    margin: 0;
-   background: rgb(1,8,23);
-   background: linear-gradient(0deg, rgba(1,8,23,1) 0%, rgba(25,25,82,1) 100%);
+   background: rgb(1, 8, 23);
+   background: linear-gradient(0deg, rgba(1, 8, 23, 1) 0%, rgba(25, 25, 82, 1) 100%);
 
    display: flex;
    flex-direction: column;
    align-items: stretch;
    align-content: stretch;
+
+   user-select: none;
 }
 
 a, p {
-   color: #fff;
+   color: #FFFFFF;
    font-family: 'Rubik', sans-serif;
    margin: 0;
 }
@@ -28,7 +30,7 @@ header {
    top: 0;
    height: auto;
    margin: 0;
-   padding: 20px 35px;
+   padding: 15px 35px;
    position: sticky;
    font-size: 1.3rem;
    display: flex;
@@ -40,7 +42,7 @@ header {
 }
 
 header a, header p {
-   color: rgba(25,25,82,1);
+   color: rgba(25, 25, 82, 1);
    text-decoration: none;
    transition: color .3s;
 }
@@ -56,12 +58,12 @@ header a:hover {
    justify-content: space-between;
 }
 
-#title-big {
+#logo-big {
    font-weight: 600;
    font-size: 1.1em;
 }
 
-#title-small {
+#logo-small {
    font-weight: 300;
    font-size: 0.8em;
 }
@@ -80,7 +82,7 @@ main {
 #parallax-area {
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: center;
    align-content: center;
    align-items: center;
    padding: 40px;
@@ -100,15 +102,17 @@ main {
 }
 
 #more-logos {
+   margin-top: 10px;
    width: 100%;
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: center;
 }
 
 #more-logos img {
    width: 100px;
    height: 100px;
+   padding: 25px;
 }
 
 #more-logos > img:nth-child(1) {
@@ -122,4 +126,56 @@ main {
 
 #more-logos > img:nth-child(3) {
    transition: all 0.2s ease-out;
+}
+
+/* Landing Content */
+
+#landing-content-area {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 4%;
+   width: 45%;
+}
+
+#title {
+   font-weight: 600;
+   font-size: 5rem;
+   letter-spacing: -1px;
+   text-transform: uppercase;
+   text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#subtitle {
+   font-size: 2rem;
+   letter-spacing: 1px;
+   text-transform: lowercase;
+   opacity: 95%;
+   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#hello {
+   color: rgb(148, 148, 231);
+   font-size: 1.5rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   opacity: 90%;
+}
+
+.separator {
+   height: 2px;
+   width: 130px;
+   background-color: rgb(95, 95, 231);
+}
+
+#separators {
+   display: flex;
+   flex-direction: row;
+   margin: 30px 0;
+}
+
+#separators > div:nth-child(2) {
+   margin-top: 15px;
+   margin-left: -70px;
 }
