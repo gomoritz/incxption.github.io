@@ -1,3 +1,18 @@
+#full-page {
+   width: 100vw;
+   overflow: hidden;
+   position: relative;
+   box-sizing: border-box;
+}
+
+section {
+   padding-top: 76px;
+   height: 100vh;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+}
+
 @keyframes fade-out-right {
    to {
       opacity: 0;
@@ -17,17 +32,11 @@
       opacity: 0;
       transform: translateX(50vw);
    }
-
-   to {
-   }
 }
 
 @keyframes fade-in-left {
    from {
       opacity: 0;
       transform: translateX(-50vw);
-   }
-
-   to {
    }
 }

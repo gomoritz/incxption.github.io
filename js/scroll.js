@@ -1,4 +1,4 @@
-const slides = [0, 1, 2]
+const slides = [0, 1]
 const fps = new FullPageScroll('full-page', {
     transitionTime: 1500,
     goToTopOnLast: false

@@ -1,0 +1,42 @@
+header {
+   z-index: 100;
+   top: 0;
+   margin: 0;
+   padding: 15px 35px;
+   position: fixed;
+   width: calc(100vw - 70px);
+   font-size: 1.3rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #FFFFFF;
+   box-shadow: 0 1px 5px rgba(20, 20, 20, 0.4);
+}
+
+header a, header p {
+   color: rgba(25, 25, 82, 1);
+   text-decoration: none;
+   transition: color .3s;
+}
+
+header a:hover {
+   color: rgb(95, 95, 231);
+}
+
+#nav-right {
+   display: flex;
+   width: 35%;
+   min-width: 300px;
+   justify-content: space-between;
+}
+
+#logo-big {
+   font-weight: 600;
+   font-size: 1.1em;
+}
+
+#logo-small {
+   font-weight: 300;
+   font-size: 0.8em;
+}
