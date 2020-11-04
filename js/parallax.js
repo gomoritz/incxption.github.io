@@ -1,4 +1,4 @@
-const elements = document.getElementsByClassName("parallax-img")
+const parallaxElements = document.getElementsByClassName("parallax-img")
 
 window.addEventListener('mousemove', event => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)

@@ -5,11 +5,12 @@
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/scroll.css">
       <title>inception - Software Developer</title>
    </head>
    <body>
       <header>
-         <div id="nav-left">
+         <div id="nav-left" onclick="test()">
             <p id="logo-big">inception</p>
             <p id="logo-small">Software Developer</p>
          </div>
@@ -19,29 +20,35 @@
             <a href="https://twitter.com/theincxption">Twitter</a>
          </div>
       </header>
-      <main>
-         <div id="landing-content-area">
-            <p id="hello">Introducing</p>
-            <p id="title">inception</p>
-            <div id="separators">
-               <div class="separator"></div>
-               <div class="separator"></div>
-            </div>
-            <p id="subtitle">A Full Stack Software Engineer based in Germany</p>
-         </div>
+      <div id="fullpage">
+         <section>
+            <main>
+               <div id="landing-content-area">
+                  <p id="hello">Introducing</p>
+                  <p id="title">inception</p>
+                  <div id="separators">
+                     <div class="separator"></div>
+                     <div class="separator"></div>
+                  </div>
+                  <p id="subtitle">A Full Stack Software Engineer based in Germany</p>
+               </div>
 
-         <div id="parallax-area">
-            <img id="main-logo" class="parallax-img" src="img/logo.jpeg" alt="inception Logo"
-                 hs="30" vs="20">
-            <div id="more-logos">
-               <img class="parallax-img" src="img/more-1.jpeg" alt="" hs="40" vs="30">
-               <img class="parallax-img" src="img/more-2.jpeg" alt="" hs="27" vs="38">
-               <img class="parallax-img" src="img/more-3.jpeg" alt="" hs="31" vs="32">
-            </div>
-         </div>
-      </main>
+               <div id="parallax-area">
+                  <img id="main-logo" class="parallax-img" src="img/logo.jpeg" alt="inception Logo"
+                       hs="30" vs="20">
+                  <div id="more-logos">
+                     <img class="parallax-img" src="img/more-1.jpeg" alt="" hs="40" vs="30">
+                     <img class="parallax-img" src="img/more-2.jpeg" alt="" hs="27" vs="38">
+                     <img class="parallax-img" src="img/more-3.jpeg" alt="" hs="31" vs="32">
+                  </div>
+               </div>
+            </main>
+         </section>
+         <section><h1>My second section</h1></section>
+      </div>
 
-
+      <script src="js/fullpage-scroll.js"></script>
       <script src="js/parallax.js"></script>
+      <script src="js/scroll.js"></script>
    </body>
 </html>

@@ -1,0 +1,37 @@
+@keyframes fade-out-right {
+   to {
+      opacity: 0;
+      transform: translateX(50vw);
+   }
+}
+
+@keyframes fade-out-left {
+   to {
+      opacity: 0;
+      transform: translateX(-50vw);
+   }
+}
+
+@keyframes fade-in-right {
+   from {
+      opacity: 0;
+      transform: translateX(50vw);
+   }
+
+   to {
+      opacity: initial;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fade-in-left {
+   from {
+      opacity: 0;
+      transform: translateX(-50vw);
+   }
+
+   to {
+      opacity: initial;
+      transform: translateX(0);
+   }
+}

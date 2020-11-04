@@ -6,13 +6,8 @@ body {
    height: 100vh;
    padding: 0;
    margin: 0;
-   background: rgb(1, 8, 23);
+   background: green;
    background: linear-gradient(0deg, rgba(1, 8, 23, 1) 0%, rgba(25, 25, 82, 1) 100%);
-
-   display: flex;
-   flex-direction: column;
-   align-items: stretch;
-   align-content: stretch;
 
    user-select: none;
 }
@@ -23,21 +18,36 @@ a, p {
    margin: 0;
 }
 
+#fullpage {
+   width: 100vw;
+   overflow: hidden;
+   position: relative;
+   box-sizing: border-box;
+}
+
+section {
+   padding-top: 76px;
+   height: 100vh;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+}
+
 /* Header */
 
 header {
    z-index: 100;
    top: 0;
-   height: auto;
    margin: 0;
    padding: 15px 35px;
-   position: sticky;
+   position: fixed;
+   width: calc(100vw - 70px);
    font-size: 1.3rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   background-color: rgba(255, 255, 255, 0.95);
+   background-color: #FFFFFF;
    box-shadow: 0 1px 5px rgba(20, 20, 20, 0.4);
 }
 
@@ -112,7 +122,7 @@ main {
 #more-logos img {
    width: 100px;
    height: 100px;
-   padding: 25px;
+   padding: 3%;
 }
 
 #more-logos > img:nth-child(1) {
@@ -167,6 +177,7 @@ main {
    height: 2px;
    width: 130px;
    background-color: rgb(95, 95, 231);
+   border-radius: 2px;
 }
 
 #separators {
