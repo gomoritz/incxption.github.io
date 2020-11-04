@@ -1,5 +1,9 @@
 const parallaxElements = document.getElementsByClassName("parallax-img")
 
+for (const element of parallaxElements) {
+    element.setAttribute("draggable", false)
+}
+
 window.addEventListener('mousemove', event => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
