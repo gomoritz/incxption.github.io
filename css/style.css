@@ -2,13 +2,16 @@
 
 body {
    overflow: hidden;
+   scroll-behavior: smooth;
    width: 100vw;
    height: 100vh;
    padding: 0;
    margin: 0;
    background: green;
    background: linear-gradient(0deg, rgba(1, 8, 23, 1) 0%, rgba(25, 25, 82, 1) 100%);
+}
 
+* {
    user-select: none;
 }
 
@@ -96,7 +99,7 @@ header a:hover {
    width: 40vw;
 }
 
-#main-logo {
+.main-image {
    width: 300px;
    height: 300px;
    transition: all 0.4s ease-out;
@@ -108,7 +111,7 @@ header a:hover {
    border-radius: 100%;
 }
 
-#more-logos {
+.more-images {
    margin-top: 10px;
    width: 100%;
    display: flex;
@@ -116,22 +119,22 @@ header a:hover {
    justify-content: center;
 }
 
-#more-logos img {
+.more-images img {
    width: 100px;
    height: 100px;
-   padding: 3%;
+   margin: 3%;
 }
 
-#more-logos > img:nth-child(1) {
+.more-images > img:nth-child(1) {
    transition: all 0.3s ease-out;
 }
 
-#more-logos > img:nth-child(2) {
-   margin-top: 30px;
+.more-images > img:nth-child(2) {
+   margin-top: 8%;
    transition: all 0.15s ease-out;
 }
 
-#more-logos > img:nth-child(3) {
+.more-images > img:nth-child(3) {
    transition: all 0.2s ease-out;
 }
 
