@@ -78,18 +78,15 @@ header a:hover {
    font-size: 0.8em;
 }
 
-/* Content */
+/* Section 1 */
 
-main {
-   height: 100%;
+.default-section {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
 }
 
-/* Parallax */
-
-#parallax-area {
+.default-parallax {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -138,9 +135,7 @@ main {
    transition: all 0.2s ease-out;
 }
 
-/* Landing Content */
-
-#landing-content-area {
+.default-content {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -148,7 +143,7 @@ main {
    width: 45%;
 }
 
-#title {
+.title {
    font-weight: 600;
    font-size: 5rem;
    letter-spacing: -1px;
@@ -156,7 +151,7 @@ main {
    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-#subtitle {
+.subtitle {
    font-size: 2rem;
    letter-spacing: 1px;
    text-transform: lowercase;
@@ -164,7 +159,7 @@ main {
    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-#hello {
+.introduction {
    color: rgb(148, 148, 231);
    font-size: 1.5rem;
    letter-spacing: 1px;
@@ -180,13 +175,27 @@ main {
    border-radius: 2px;
 }
 
-#separators {
+.separators {
    display: flex;
    flex-direction: row;
    margin: 30px 0;
 }
 
-#separators > div:nth-child(2) {
+.separators > div:nth-child(2) {
    margin-top: 15px;
    margin-left: -70px;
+}
+
+/* Section #2 */
+
+#section-2 > .content {
+   width: 50%;
+}
+
+.text {
+   font-size: 1.6rem;
+   letter-spacing: 0.03rem;
+   line-height: 1.9rem;
+   opacity: 95%;
+   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

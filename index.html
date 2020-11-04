@@ -10,7 +10,7 @@
    </head>
    <body>
       <header>
-         <div id="nav-left" onclick="test()">
+         <div id="nav-left" onclick="animateSlide()">
             <p id="logo-big">inception</p>
             <p id="logo-small">Software Developer</p>
          </div>
@@ -21,30 +21,46 @@
          </div>
       </header>
       <div id="fullpage">
-         <section>
-            <main>
-               <div id="landing-content-area">
-                  <p id="hello">Introducing</p>
-                  <p id="title">inception</p>
-                  <div id="separators">
-                     <div class="separator"></div>
-                     <div class="separator"></div>
-                  </div>
-                  <p id="subtitle">A Full Stack Software Engineer based in Germany</p>
+         <section id="section-1" class="default-section">
+            <div class="content default-content">
+               <p class="introduction">Introducing</p>
+               <p class="title">inception</p>
+               <div class="separators">
+                  <div class="separator"></div>
+                  <div class="separator"></div>
                </div>
+               <p class="subtitle">A Full Stack Software Engineer based in Germany</p>
+            </div>
 
-               <div id="parallax-area">
-                  <img id="main-logo" class="parallax-img" src="img/logo.jpeg" alt="inception Logo"
-                       hs="30" vs="20">
-                  <div id="more-logos">
-                     <img class="parallax-img" src="img/more-1.jpeg" alt="" hs="40" vs="30">
-                     <img class="parallax-img" src="img/more-2.jpeg" alt="" hs="27" vs="38">
-                     <img class="parallax-img" src="img/more-3.jpeg" alt="" hs="31" vs="32">
-                  </div>
+            <div class="parallax default-parallax">
+               <img id="main-logo" class="parallax-img" src="img/logo.jpeg" alt="inception Logo"
+                    hs="30" vs="20">
+               <div id="more-logos">
+                  <img class="parallax-img" src="img/more-1.jpeg" alt="" hs="40" vs="30">
+                  <img class="parallax-img" src="img/more-2.jpeg" alt="" hs="27" vs="38">
+                  <img class="parallax-img" src="img/more-3.jpeg" alt="" hs="31" vs="32">
                </div>
-            </main>
+            </div>
          </section>
-         <section><h1>My second section</h1></section>
+
+         <section id="section-2" class="default-section">
+            <div class="content default-content">
+               <p class="introduction">These are</p>
+               <p class="title">my skills</p>
+               <div class="separators">
+                  <div class="separator"></div>
+                  <div class="separator"></div>
+               </div>
+               <p class="text">
+                  I have worked with several languages, libraries and frameworks, but I
+                  also enjoy learning new techniques. My current favorite language is
+                  Kotlin because it offers a lot of opportunities in different
+                  fields of software development.
+               </p>
+            </div>
+            <div class="parallax default-parallax">
+            </div>
+         </section>
       </div>
 
       <script src="js/fullpage-scroll.js"></script>

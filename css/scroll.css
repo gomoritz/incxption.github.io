@@ -19,8 +19,6 @@
    }
 
    to {
-      opacity: initial;
-      transform: translateX(0);
    }
 }
 
@@ -32,6 +30,6 @@
 
    to {
       opacity: initial;
-      transform: translateX(0);
+      transform: initial;
    }
 }
