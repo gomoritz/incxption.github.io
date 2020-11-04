@@ -1,25 +1,37 @@
+const slides = [0, 1, 2]
 const fps = new FullPageScroll('fullpage', {
-    transitionTime: 1500
+    transitionTime: 1500,
+    goToTopOnLast: false
 });
 
-animateSlide(1, fadeOut)
+// fix scrolling after reload
+setTimeout(() => {
+    window.scroll(0, 0)
+}, 50)
 
+// fade out all other slides than the main slide
+for (let i = 1; i < slides.length; i++) {
+    animateSlide(i, fadeOut)
+}
+
+// handle slide change
 fps.onslide = function(e) {
     const slide = e.target.currentSlide
 
-    if (slide !== 0) {
-        animateSlide(0, fadeOut)
-    } else {
-        animateSlide(0, fadeIn)
-    }
-
-    if (slide !== 1) {
-        animateSlide(1, fadeOut)
-    } else {
-        animateSlide(1, fadeIn)
+    for (const n of slides) {
+        if (slide !== n) {
+            animateSlide(n, fadeOut)
+        } else {
+            animateSlide(n, fadeIn)
+        }
     }
 }
 
+/**
+ * Animates the elements inside of the slide n using the given animation function.
+ * @param {number} n The index of the slide starting from 0.
+ * @param {function} animation The animation function applied to the elements.
+ */
 function animateSlide(n, animation) {
     const left = document.getElementsByClassName("content")[n].children
     const right = document.getElementsByClassName("parallax")[n].children
@@ -40,6 +52,9 @@ function animateSlide(n, animation) {
     }
 }
 
+/**
+ * Fades out the element e in the given direction.
+ */
 function fadeOut(e, direction) {
     e.setAttribute("animating", true)
     setTimeout(() => {
@@ -47,6 +62,9 @@ function fadeOut(e, direction) {
     }, 200)
 }
 
+/**
+ * Fades in the element e from the given direction.
+ */
 function fadeIn(e, direction) {
     e.setAttribute("animating", true)
     setTimeout(() => {
