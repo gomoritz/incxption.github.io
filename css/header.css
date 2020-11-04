@@ -4,14 +4,11 @@ header {
    margin: 0;
    padding: 15px 35px;
    position: fixed;
-   width: calc(100vw - 70px);
+   width: 100vw;
    font-size: 1.3rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
    background-color: #FFFFFF;
    box-shadow: 0 1px 5px rgba(20, 20, 20, 0.4);
+   box-sizing: border-box;
 }
 
 header a, header p {
@@ -22,6 +19,15 @@ header a, header p {
 
 header a:hover {
    color: rgb(95, 95, 231);
+}
+
+.header-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1700px;
+   margin: auto;
 }
 
 #nav-right {
