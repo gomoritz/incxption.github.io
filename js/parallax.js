@@ -4,7 +4,9 @@ window.addEventListener('mousemove', event => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-    for (const element of elements) {
+    for (const element of parallaxElements) {
+        if (element.getAttribute("animating")) continue
+
         const centerX = element.clientTop + element.clientHeight / 2;
         const centerY = element.clientLeft + element.clientWidth / 2;
 
